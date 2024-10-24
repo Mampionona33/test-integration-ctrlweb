@@ -6,9 +6,7 @@ const title = ref("ctrlweb.ca");
 </script>
 
 <template>
-  <header class="flex items-center justify-between p-4 bg-green-500 text-white">
-    <Navbar />
-  </header>
+  <Navbar />
 </template>
 
 <style scoped></style>
