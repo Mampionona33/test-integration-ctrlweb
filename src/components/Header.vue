@@ -8,10 +8,12 @@ const title = ref("ctrlweb.ca");
 
 <template>
   <div
-    class="bg-[url('/src/assets/Rectangle_9.png')] bg-cover bg-center h-screen"
+    class="bg-[url('/src/assets/Rectangle_9.png')] bg-cover bg-center h-screen flex flex-col"
   >
     <Navbar />
-    <HeloLight3 />
+    <div class="flex-grow flex justify-center items-center">
+      <HeloLight3 />
+    </div>
   </div>
 </template>
 

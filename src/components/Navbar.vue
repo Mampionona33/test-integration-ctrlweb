@@ -18,7 +18,7 @@ const toggleMenu = () => {
 
 <template>
   <nav
-    class="flex items-center justify-between h-32 w-full text-white px-4 relative"
+    class="top-0 flex items-center justify-between w-full text-white px-4 relative"
   >
     <div class="flex items-center gap-8 md:flex-1 md:justify-end">
       <div class="hidden md:flex">
