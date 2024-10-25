@@ -1,51 +1,115 @@
 <script setup lang="ts">
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import {
-  faSkype,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { ref } from "vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faSquareFacebook,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-// Ajouter les icônes à la librairie
-library.add(faSkype, faFacebook, faLinkedin);
+library.add(faSquareFacebook, faLinkedin, faTwitter, faBars);
+
+const isOpen = ref(false);
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value;
+};
 </script>
 
 <template>
-  <nav class="grid grid-cols-4 p-4 gap-4 h-32">
-    <ul class="flex gap-5 items-center justify-end align-middle col-span-2">
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/product">Product</router-link>
-      </li>
-      <li>
-        <router-link to="/pricing">Pricing</router-link>
-      </li>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
-      <li>
-        <router-link to="/contact">Contact</router-link>
-      </li>
-    </ul>
-
-    <div class="col-span-1 items-center justify-start flex align-middle">
-      <img class="h-20" src="../assets/logo.png" alt="logo" />
+  <nav
+    class="flex items-center justify-between h-32 w-full text-white px-4 relative"
+  >
+    <div class="flex items-center gap-8 md:flex-1 md:justify-end">
+      <div class="hidden md:flex">
+        <ul class="flex gap-8 items-center">
+          <li>
+            <router-link class="hover:text-gray-300" to="/">Home</router-link>
+          </li>
+          <li>
+            <router-link class="hover:text-gray-300" to="/product"
+              >Product</router-link
+            >
+          </li>
+          <li>
+            <router-link class="hover:text-gray-300" to="/pricing"
+              >Pricing</router-link
+            >
+          </li>
+          <li>
+            <router-link class="hover:text-gray-300" to="/about"
+              >About</router-link
+            >
+          </li>
+          <li>
+            <router-link class="hover:text-gray-300" to="/contact"
+              >Contact</router-link
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="col-span-1 flex gap-4 justify-center items-center">
-      <div class="">
-        <FontAwesomeIcon :icon="['fab', 'skype']" />
-      </div>
+    <div class="flex items-center md:justify-center flex-1">
+      <router-link class="flex gap-2 hover:scale-105" to="/">
+        <img class="h-20" src="../assets/logo_dark.png" alt="logo" />
+      </router-link>
+    </div>
 
-      <div>
-        <FontAwesomeIcon :icon="['fab', 'facebook']" />
-      </div>
-      <div>
-        <FontAwesomeIcon :icon="['fab', 'linkedin']" />
-      </div>
+    <div class="hidden md:flex gap-4 items-center flex-1 justify-start">
+      <router-link class="hover:text-gray-300" to="/twitter">
+        <font-awesome-icon :icon="['fab', 'twitter']" class="text-2xl" />
+      </router-link>
+      <router-link class="hover:text-gray-300" to="/facebook">
+        <font-awesome-icon
+          :icon="['fab', 'square-facebook']"
+          class="text-2xl"
+        />
+      </router-link>
+      <router-link class="hover:text-gray-300" to="/linkedin">
+        <font-awesome-icon :icon="['fab', 'linkedin']" class="text-2xl" />
+      </router-link>
+    </div>
+
+    <div class="md:hidden">
+      <button @click="toggleMenu" class="text-2xl">
+        <font-awesome-icon :icon="['fas', 'bars']" />
+      </button>
+    </div>
+
+    <div
+      v-if="isOpen"
+      class="absolute left-0 top-24 bg-gray-800 w-full p-4 md:hidden"
+    >
+      <ul class="flex flex-col gap-4">
+        <li>
+          <router-link class="hover:text-gray-300" to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link class="hover:text-gray-300" to="/product"
+            >Product</router-link
+          >
+        </li>
+        <li>
+          <router-link class="hover:text-gray-300" to="/pricing"
+            >Pricing</router-link
+          >
+        </li>
+        <li>
+          <router-link class="hover:text-gray-300" to="/about"
+            >About</router-link
+          >
+        </li>
+        <li>
+          <router-link class="hover:text-gray-300" to="/contact"
+            >Contact</router-link
+          >
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
+
+<style scoped>
+/* Ajoutez des styles supplémentaires si nécessaire */
+</style>
