@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 </script>
 
 <template>
-  <div>
+  <div class="bg-slate-100">
     <Header />
     <Home />
   </div>
