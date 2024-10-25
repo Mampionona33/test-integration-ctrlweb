@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+    class="flex flex-col items-center justify-start min-h-screen bg-gray-100 p-4 md:py-24"
   >
     <Features />
   </div>

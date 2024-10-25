@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import Navbar from "./Navbar.vue";
 import HeloLight3 from "./HeloLight3.vue";
-
-const title = ref("ctrlweb.ca");
 </script>
 
 <template>

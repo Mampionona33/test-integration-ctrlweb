@@ -79,7 +79,7 @@ const toggleMenu = () => {
 
     <div
       v-if="isOpen"
-      class="absolute left-0 top-24 bg-gray-800 w-full p-4 md:hidden"
+      class="absolute left-0 top-16 bg-gray-800 w-full p-4 md:hidden"
     >
       <ul class="flex flex-col gap-4">
         <li>
