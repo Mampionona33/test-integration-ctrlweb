@@ -2,7 +2,7 @@
   <input
     :type="type"
     :placeholder="placeholder"
-    class="py-2 bg-slate-200 rounded-full px-10"
+    class="py-2 bg-slate-200 rounded-full px-10 w-full"
   />
 </template>
 

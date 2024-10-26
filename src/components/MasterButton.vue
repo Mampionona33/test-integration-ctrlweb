@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-9 rounded-full"
+    class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-9 rounded-full w-full"
     @click="handleClick"
   >
     {{ title }}
