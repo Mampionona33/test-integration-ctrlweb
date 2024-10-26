@@ -32,7 +32,7 @@
     <img
       src="/src/assets/desktop_screen_video.svg"
       alt="vidéo"
-      class="hidden md:block"
+      class="hidden h-screen p-6 md:block"
     />
   </div>
 </template>
