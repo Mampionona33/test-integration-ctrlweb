@@ -49,13 +49,7 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import appInput from "./appInput.vue";
 import MasterButton from "./MasterButton.vue";
-export default {
-  components: {
-    appInput,
-    MasterButton,
-  },
-};
 </script>
