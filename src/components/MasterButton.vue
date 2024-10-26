@@ -1,14 +1,14 @@
 <template>
   <button
-    class="bg-blue-500 hover:bg-blue-700 text-white py-4 px-9 rounded-full"
-    @click="$emit('click')"
+    class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-9 rounded-full"
+    @click="handleClick"
   >
     {{ title }}
   </button>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   title: string;
 }>();
 

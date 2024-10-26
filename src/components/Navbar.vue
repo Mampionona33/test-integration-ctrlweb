@@ -22,7 +22,7 @@ const toggleMenu = () => {
   >
     <div class="flex items-center gap-8 md:flex-1 md:justify-end">
       <div class="hidden md:flex">
-        <ul class="flex gap-8 items-center">
+        <ul class="flex gap-4 items-center justify-end">
           <li>
             <router-link class="hover:text-gray-300" to="/">Home</router-link>
           </li>
@@ -79,7 +79,7 @@ const toggleMenu = () => {
 
     <div
       v-if="isOpen"
-      class="absolute left-0 top-16 bg-gray-800 w-full p-4 md:hidden"
+      class="absolute left-0 top-16 bg-gray-800 w-full p-4 md:hidden z-10 flex flex-col"
     >
       <ul class="flex flex-col gap-4">
         <li>
@@ -110,6 +110,4 @@ const toggleMenu = () => {
   </nav>
 </template>
 
-<style scoped>
-/* Ajoutez des styles supplémentaires si nécessaire */
-</style>
+<style scoped></style>

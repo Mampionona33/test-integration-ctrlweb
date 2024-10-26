@@ -4,11 +4,15 @@ import HeloLight3 from "./HeloLight3.vue";
 </script>
 
 <template>
-  <div
-    class="bg-[url('/src/assets/Rectangle_9.png')] bg-cover bg-center h-screen flex flex-col"
-  >
+  <div class="relative flex flex-col">
+    <img
+      src="/src/assets/Rectangle_9.png"
+      class="absolute top-0 left-0 object-cover pb-10 w-full h-screen md:h-fit"
+    />
     <Navbar />
-    <div class="flex-grow flex justify-center items-center">
+    <div
+      class="flex-grow flex justify-center items-center relative md:h-[calc(100vh-10rem)]"
+    >
       <HeloLight3 />
     </div>
   </div>
