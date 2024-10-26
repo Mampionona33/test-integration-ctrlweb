@@ -4,12 +4,14 @@
   >
     <Features />
     <HeroLight4 />
+    <cat3 />
   </div>
 </template>
 
 <script setup lang="ts">
 import Features from "../components/Features.vue";
 import HeroLight4 from "/src/components/HeroLight4.vue";
+import cat3 from "/src/components/cat3.vue";
 </script>
 
 <style scoped></style>
