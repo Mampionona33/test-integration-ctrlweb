@@ -18,7 +18,7 @@
           freelancers
         </h4>
       </div>
-      <div class="flex justify-center items-center w-3/4 px-4 py-20 lg:hidden">
+      <div class="flex justify-center w-full items-center px-4 py-20 lg:hidden">
         <img
           src="/src/assets/undraw_newsletter_vovu.png"
           alt="undraw"
