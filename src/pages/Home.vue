@@ -5,6 +5,7 @@
     <Features />
     <HeroLight4 />
     <cat3 />
+    <Partners />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import Features from "../components/Features.vue";
 import HeroLight4 from "/src/components/HeroLight4.vue";
 import cat3 from "/src/components/cat3.vue";
+import Partners from "/src/components/Partners.vue";
 </script>
 
 <style scoped></style>

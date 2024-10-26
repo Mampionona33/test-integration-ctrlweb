@@ -1,5 +1,7 @@
 <template>
-  <div class="text-center lg:text-left lg:flex lg:flex-row lg:justify-between lg:gap-20 lg:px-20">
+  <div
+    class="text-center py-20 lg:text-left lg:flex lg:flex-row lg:justify-between lg:gap-20 lg:px-20"
+  >
     <div class="hidden lg:flex lg:w-1/2">
       <img
         src="/src/assets/undraw_newsletter_vovu.png"
@@ -11,7 +13,7 @@
       <div class="flex flex-col gap-4">
         <h3 class="font-bold text-slate-800 text-xl">At your fingertips</h3>
         <h2 class="text-5xl text-slate-800">Newsletter</h2>
-        <h4 class="text-3xl text-slate-600 ">
+        <h4 class="text-3xl text-slate-600">
           Most calendars are designed for teams. Slate is designed for
           freelancers
         </h4>
