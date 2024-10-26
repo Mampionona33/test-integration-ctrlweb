@@ -11,7 +11,7 @@
     <img src="../assets/video_screen.png" alt="vidéo" class="md:hidden" />
 
     <div
-      class="flex flex-col lg:flex-row md:gap-x-20 md:w-1/2 md:mt-14 md:items-start"
+      class="flex flex-col lg:flex-row md:flex-row md:gap-x-20 md:w-1/2 md:mt-14 md:items-start"
     >
       <FeatureStyle2
         path="/src/assets/rond_carre.svg"

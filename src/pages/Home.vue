@@ -11,9 +11,9 @@
 
 <script setup lang="ts">
 import Features from "../components/Features.vue";
-import HeroLight4 from "/src/components/HeroLight4.vue";
-import cat3 from "/src/components/cat3.vue";
-import Partners from "/src/components/Partners.vue";
+import HeroLight4 from "../components/HeroLight4.vue";
+import cat3 from "../components/cat3.vue";
+import Partners from "../components/Partners.vue";
 </script>
 
 <style scoped></style>

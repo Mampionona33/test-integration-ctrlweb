@@ -35,12 +35,12 @@
           </p>
         </div>
         <div
-          class="flex justify-center items-center gap-4 flex-col px-20 lg:flex-row lg:px-0 lg:justify-start"
+          class="flex w-full justify-center items-center gap-4 flex-col px-5 md:flex-row lg:flex-row lg:px-0 lg:justify-start"
         >
-          <div class="flex w-1/2">
+          <div class="flex max-w-full w-full">
             <appInput type="YourEmail" placeholder="Enter your email" />
           </div>
-          <div class="flex w-1/2">
+          <div class="flex max-w-full w-full">
             <MasterButton title="Subscribe" />
           </div>
         </div>
