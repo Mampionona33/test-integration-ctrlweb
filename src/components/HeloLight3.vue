@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-center text-white flex flex-col justify-start items-center md:gap-y-1 pt-8 md:pt-0"
+    class="text-center text-white flex flex-col justify-start items-center md:gap-y-1 md:pt-0"
   >
     <h1 class="text-4xl md:text-5xl font-thin md:w-3/4 md:font-bold md:px-0">
       The best products start with Figma

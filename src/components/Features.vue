@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-center flex flex-col gap-y-10 justify-center items-center py-24 md:py-4"
+    class="text-center flex flex-col gap-y-10 justify-center items-center md:py-16"
   >
     <h2 class="text-5xl">Features</h2>
     <p
