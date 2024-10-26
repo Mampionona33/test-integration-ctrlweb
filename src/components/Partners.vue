@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col py-20">
+  <div class="flex flex-col py-20 w-full items-center">
     <div class="text-center flex flex-col gap-8">
       <h1 class="text-5xl text-slate-800 font-bold">Partners</h1>
       <p class="text-3xl text-slate-600">
@@ -38,14 +38,19 @@
         class="hidden sm:block"
       />
     </div>
+    <div class="flex">
+      <MasterButton title="Try For Free" />
+    </div>
   </div>
 </template>
 
 <script>
+import MasterButton from "./MasterButton.vue";
 import CardPartner from "/src/components/CardPartner.vue";
 export default {
   components: {
     CardPartner,
+    MasterButton,
   },
 };
 </script>

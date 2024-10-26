@@ -6,6 +6,7 @@
     <HeroLight4 />
     <cat3 />
     <Partners />
+    <Testimonials />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Features from "../components/Features.vue";
 import HeroLight4 from "../components/HeroLight4.vue";
 import cat3 from "../components/cat3.vue";
 import Partners from "../components/Partners.vue";
+import Testimonials from "../components/testimonials.vue";
 </script>
 
 <style scoped></style>
