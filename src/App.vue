@@ -6,7 +6,7 @@ import Header from "./components/Header.vue";
 <template>
   <div class="bg-slate-100">
     <Header />
-    <div class="mt-16">
+    <div class="">
       <Home />
     </div>
   </div>
