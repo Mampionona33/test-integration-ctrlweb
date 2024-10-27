@@ -15,17 +15,25 @@ export default {
       <h2 class="text-5xl">Pricing</h2>
       <h4 class="text-3xl px-10">Most calendars are designed for teams.</h4>
     </div>
-    <div class="w-full px-20 gap-10 flex flex-col">
-      <pricingCard />
-      <pricingCard
-        title="STANDARD"
-        price="10"
-        background="bg-sky-700"
-        textColor="text-white"
-        buttonColor="bg-white"
-        buttonTextColor="text-sky-700"
-      />
-      <pricingCard title="BUSINESS" price="99" />
+    <div
+      class="w-full px-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div class="col-span-1 lg:py-8 flex">
+        <pricingCard />
+      </div>
+      <div class="col-span-1 flex">
+        <pricingCard
+          title="STANDARD"
+          price="10"
+          background="bg-sky-700"
+          textColor="text-white"
+          buttonColor="bg-white"
+          buttonTextColor="text-sky-700"
+        />
+      </div>
+      <div class="col-span-1 lg:py-8 flex">
+        <pricingCard title="BUSINESS" price="99" />
+      </div>
     </div>
   </div>
 </template>
