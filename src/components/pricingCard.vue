@@ -6,10 +6,11 @@
       'flex',
       'flex-col',
       'rounded-lg',
-      'px-4',
+      'px-10',
       'text-center',
       'py-10',
       'gap-10',
+      'items-center',
     ]"
   >
     <!-- Titre et description -->
@@ -20,7 +21,7 @@
 
     <!-- Prix -->
     <div class="flex flex-row justify-center items-center gap-4">
-      <h1 class="text-7xl font-bold">0</h1>
+      <h1 class="text-7xl font-bold">{{ price }}</h1>
       <div class="flex flex-col justify-start items-start">
         <h3 class="font-bold text-2xl">$</h3>
         <h6>Per Month</h6>
@@ -34,7 +35,12 @@
 
     <!-- Bouton d'action -->
     <div>
-      <MasterButton :title="'Order Now'" :bgColor="buttonColor" />
+      <MasterButton
+        :textColor="buttonTextColor"
+        :title="'Order Now'"
+        :bgColor="buttonColor"
+        @click="handleClick"
+      />
     </div>
   </div>
 </template>
@@ -48,6 +54,10 @@ export default {
     title: {
       type: String,
       default: "FREE",
+    },
+    price: {
+      type: String,
+      default: "0",
     },
     description: {
       type: String,
@@ -64,6 +74,15 @@ export default {
     buttonColor: {
       type: String,
       default: "bg-[#252b42]",
+    },
+    buttonTextColor: {
+      type: String,
+      default: "text-white",
+    },
+  },
+  methods: {
+    handleClick() {
+      console.log("click", props.title);
     },
   },
   components: {
