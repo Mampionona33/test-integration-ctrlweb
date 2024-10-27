@@ -4,7 +4,7 @@
       <h2>Contact Us</h2>
       <h4>Most calendars are designed for teams.</h4>
     </div>
-    <div class="flex gap-4 flex-row text-2xl">
+    <div class="flex gap-4 flex-row text-2xl items-center justify-center">
       <div v-for="icon in listIcons" :key="icon.name">
         <router-link
           :to="icon.link"
