@@ -8,11 +8,13 @@
     <Partners />
     <Testimonials />
     <Pricing />
+    <ContactUs />
   </div>
 </template>
 
 <script setup lang="ts">
 import Cat3 from "../components/cat3.vue";
+import ContactUs from "../components/contactUs.vue";
 import Features from "../components/Features.vue";
 import HeroLight4 from "../components/HeroLight4.vue";
 import Partners from "../components/Partners.vue";
