@@ -1,6 +1,9 @@
 <template>
   <button
-    class="flex items-center justify-center bg-blue-400 hover:bg-blue-700 text-white py-2 px-9 rounded-full w-full text-wrap break-words"
+    :class="[
+      bgColor || 'bg-blue-400', // Utilise bgColor s'il est défini, sinon bg-blue-400
+      'flex items-center justify-center hover:bg-opacity-80 text-white py-2 px-9 rounded-full w-full text-wrap break-words',
+    ]"
     @click="handleClick"
   >
     {{ title }}
@@ -10,6 +13,7 @@
 <script setup lang="ts">
 defineProps<{
   title: string;
+  bgColor?: string; // Couleur de fond optionnelle
 }>();
 
 const handleClick = (event: Event) => {
@@ -17,3 +21,5 @@ const handleClick = (event: Event) => {
   alert("Button clicked!");
 };
 </script>
+
+<style scoped></style>
