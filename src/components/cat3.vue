@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col text-center h-full py-20 lg:text-left lg:flex lg:flex-row lg:justify-between lg:gap-20 lg:px-20"
+    class="flex flex-col text-center h-full px-4 py-20 lg:text-left lg:flex lg:flex-row lg:justify-between lg:gap-20 lg:px-20"
   >
     <div class="hidden lg:flex lg:w-1/2">
       <img

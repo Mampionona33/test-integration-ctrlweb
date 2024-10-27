@@ -4,7 +4,7 @@ import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <div class="bg-slate-100 flex flex-col">
+  <div class="bg-slate-100 flex flex-col font-graphik">
     <Header />
     <div class="">
       <Home />

@@ -9,7 +9,7 @@ export default {
 
 <template>
   <div
-    class="text-center flex items-center justify-center py-20 flex-col gap-20 sm:w-full"
+    class="text-center flex items-center justify-center px-4 py-20 flex-col gap-20 sm:w-full"
   >
     <h2 class="text-5xl">Testimonials</h2>
     <div class="flex justify-center items-center gap-20 flex-col w-full">
@@ -17,7 +17,7 @@ export default {
         <img src="../assets/logos_ibm.svg" alt="logo_ibm" />
       </div>
       <div class="flex justify-center w-full items-center">
-        <p class="w-1/2 sm:w-full md:w-full">
+        <p class="w-1/2 px-10 sm:w-full md:w-full">
           Most calendars are designed for teams. Slate is designed for
           freelancers who want a simple way to plan their schedule.
         </p>
