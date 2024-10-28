@@ -53,7 +53,7 @@
       </div>
 
       <!-- Formulaire -->
-      <div class="lg:min-w-max">
+      <div class="min-w-max">
         <FormContactUs />
       </div>
     </div>
