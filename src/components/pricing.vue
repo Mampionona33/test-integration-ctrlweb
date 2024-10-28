@@ -18,10 +18,10 @@ export default {
     <div
       class="w-full px-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
     >
-      <div class="col-span-1 lg:py-8 flex">
+      <div class="col-span-1 lg:py-8 flex justify-center items-center">
         <pricingCard />
       </div>
-      <div class="col-span-1 flex">
+      <div class="col-span-1 flex justify-center items-center md:h-full">
         <pricingCard
           title="STANDARD"
           price="10"
@@ -31,7 +31,7 @@ export default {
           buttonTextColor="text-sky-700"
         />
       </div>
-      <div class="col-span-1 lg:py-8 flex">
+      <div class="col-span-1 lg:py-8 flex justify-center items-center">
         <pricingCard title="BUSINESS" price="99" />
       </div>
     </div>
