@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 px-8 flex flex-col gap-8">
+  <div class="py-20 px-8 flex flex-col gap-20">
     <div class="flex gap-8 flex-col items-center">
       <h2 class="text-5xl text-slate-800 text-center">Contact Us</h2>
       <h4 class="text-3xl text-slate-600 text-center w-3/4">
