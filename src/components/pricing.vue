@@ -16,12 +16,12 @@ export default {
       <h4 class="text-3xl px-10">Most calendars are designed for teams.</h4>
     </div>
     <div
-      class="w-full px-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      class="w-full px-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center lg:gap-20 lg:max-w-max"
     >
       <div class="col-span-1 lg:py-8 flex justify-center items-center">
         <pricingCard />
       </div>
-      <div class="col-span-1 flex justify-center items-center md:h-full">
+      <div class="col-span-1 flex justify-center items-center h-full">
         <pricingCard
           title="STANDARD"
           price="10"

@@ -10,7 +10,7 @@
       'text-center',
       'py-10',
       'gap-10',
-      'items-center',
+      'items-center','h-full',
     ]"
   >
     <!-- Titre et description -->
