@@ -1,8 +1,8 @@
 <template>
   <div class="py-20 px-8 flex flex-col gap-8">
-    <div class="flex gap-8 flex-col">
+    <div class="flex gap-8 flex-col items-center">
       <h2 class="text-5xl text-slate-800 text-center">Contact Us</h2>
-      <h4 class="text-3xl text-slate-600 text-center">
+      <h4 class="text-3xl text-slate-600 text-center w-3/4">
         Most calendars are designed for teams.
       </h4>
     </div>
@@ -14,17 +14,19 @@
           :to="icon.link"
           :class="[icon.color, icon.hoverColor, 'transition-colors']"
         >
-          <font-awesome-icon :icon="['fab', icon.name]" class="text-2xl" />
+          <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
         </router-link>
       </div>
     </div>
 
     <!-- Section des informations de contact -->
-    <div class="flex gap-4 flex-col text-2xl items-start justify-center mt-6">
+    <div
+      class="flex gap-4 flex-col text-2xl items-start justify-center mt-6 px-8"
+    >
       <div
         v-for="info in infos"
         :key="info.id"
-        class="flex items-center space-x-2"
+        class="flex items-center space-x-2 gap-4 jus"
       >
         <font-awesome-icon
           :icon="['fas', info.icon]"
@@ -35,7 +37,7 @@
             'text-2xl',
           ]"
         />
-        <h2 class="text-xl">{{ info.title }}</h2>
+        <h2 class="text-lg text-gray-700">{{ info.title }}</h2>
       </div>
     </div>
 
@@ -97,7 +99,7 @@ const infos = [
   {
     id: "3",
     icon: "envelope",
-    title: "Main Avenue, 987",
+    title: "willie.jennings@example.com",
     color: "text-blue-500",
     hoverColor: "hover:text-blue-300",
   },
