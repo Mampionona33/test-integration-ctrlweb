@@ -27,8 +27,10 @@ const handleSubmit = (event: Event) => {
       <div class="w-full">
         <AppTextArea placeholder="Your Message" />
       </div>
-      <div>
-        <MasterButton title="Submit" />
+      <div class="w-full flex justify-start">
+        <div>
+          <MasterButton title="Submit" />
+        </div>
       </div>
     </form>
   </div>
