@@ -21,12 +21,12 @@
 
     <!-- Section des informations de contact -->
     <div
-      class="flex gap-4 flex-col text-2xl items-start justify-center mt-6 px-8"
+      class="flex gap-4 flex-col text-2xl items-start justify-center mt-6 px-8 md:flex-row"
     >
       <div
         v-for="info in infos"
         :key="info.id"
-        class="flex items-center space-x-2 gap-4 jus"
+        class="flex items-center space-x-2 gap-4 justify-center flex-row md:flex-col"
       >
         <font-awesome-icon
           :icon="['fas', info.icon]"
