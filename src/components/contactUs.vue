@@ -2,47 +2,61 @@
   <div class="py-20 px-8 flex flex-col gap-20">
     <div class="flex gap-8 flex-col items-center">
       <h2 class="text-5xl text-slate-800 text-center">Contact Us</h2>
-      <h4 class="text-3xl text-slate-600 text-center w-3/4">
+      <h4 class="text-3xl text-slate-600 text-center w-3/5">
         Most calendars are designed for teams.
       </h4>
     </div>
 
-    <!-- Section des icônes de réseaux sociaux -->
-    <div class="flex gap-4 flex-row text-2xl items-center justify-center">
-      <div v-for="icon in listIcons" :key="icon.name">
-        <router-link
-          :to="icon.link"
-          :class="[icon.color, icon.hoverColor, 'transition-colors']"
-        >
-          <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
-        </router-link>
-      </div>
-    </div>
-
-    <!-- Section des informations de contact -->
     <div
-      class="flex gap-4 flex-col text-2xl items-start justify-center mt-6 px-8 md:flex-row"
+      class="flex flex-col gap-10 items-center justify-center lg:flex-row-reverse md:px-10"
     >
-      <div
-        v-for="info in infos"
-        :key="info.id"
-        class="flex items-center space-x-2 gap-4 justify-center flex-row md:flex-col"
-      >
-        <font-awesome-icon
-          :icon="['fas', info.icon]"
-          :class="[
-            info.color,
-            info.hoverColor,
-            'transition-colors',
-            'text-2xl',
-          ]"
-        />
-        <h2 class="text-lg text-gray-700">{{ info.title }}</h2>
+      <div class="flex flex-col gap-10 lg:flex-col-reverse">
+        <!-- Section des icônes de réseaux sociaux -->
+        <div
+          class="flex px-4 gap-4 flex-row text-2xl items-center justify-center lg:justify-start"
+        >
+          <div v-for="icon in listIcons" :key="icon.name">
+            <router-link
+              :to="icon.link"
+              :class="[icon.color, icon.hoverColor, 'transition-colors']"
+            >
+              <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
+            </router-link>
+          </div>
+        </div>
+
+        <div class="hidden md:flex justify-center items-center">
+          <img src="../assets/map_screen.png" alt="" />
+        </div>
+
+        <!-- Section des informations de contact -->
+        <div
+          class="flex gap-4 flex-col text-2xl items-start justify-center mt-6 px-8 lg:flex-row"
+        >
+          <div
+            v-for="info in infos"
+            :key="info.id"
+            class="flex items-center space-x-2 gap-4 justify-center flex-row lg:flex-col"
+          >
+            <font-awesome-icon
+              :icon="['fas', info.icon]"
+              :class="[
+                info.color,
+                info.hoverColor,
+                'transition-colors',
+                'text-2xl',
+              ]"
+            />
+            <h2 class="text-lg text-gray-700 md:text-base">{{ info.title }}</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="lg:min-w-max">
+        <FormContactUs />
       </div>
     </div>
-
-    <!-- Formulaire -->
-    <FormContactUs />
   </div>
 </template>
 
