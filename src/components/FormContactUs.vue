@@ -1,20 +1,34 @@
 <script setup lang="ts">
 import AppInput from "./appInput.vue";
+import AppTextArea from "./appTextArea.vue";
+import MasterButton from "./MasterButton.vue";
+
+const handleSubmit = (event: Event) => {
+  event.preventDefault();
+  console.log("Formulaire soumis");
+};
 </script>
 
 <template>
-  <div>
-    <h3>Contact Us</h3>
+  <div class="flex flex-col rounded-xl shadow-xl">
+    <h3 class="text-3xl font-bold text-slate-800 text-center pt-10">
+      Contact Us
+    </h3>
     <form
-      action=""
-      method="post"
-      class="flex flex-col items-center justify-center gap-8"
+      @submit="handleSubmit"
+      class="flex flex-col items-center justify-center gap-8 py-10 px-12"
     >
-      <div>
+      <div class="w-full">
         <AppInput type="text" placeholder="Your Name" />
       </div>
-      <div>
+      <div class="w-full">
         <AppInput type="email" placeholder="Your Email" />
+      </div>
+      <div class="w-full">
+        <AppTextArea placeholder="Your Message" />
+      </div>
+      <div>
+        <MasterButton title="Submit" />
       </div>
     </form>
   </div>
