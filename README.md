@@ -19,7 +19,7 @@ Ce projet est une intégration web basée sur une maquette Figma fournie par Ctr
 
 ## Utilisation de git-flow
 
-Ce projet utilise la méthodologie **git-flow** pour la gestion des branches. Voici les principales commandes à connaître :
+Ce projet utilise la méthodologie **git-flow** pour la gestion des branches.
 
 ## Structure du Projet
 
