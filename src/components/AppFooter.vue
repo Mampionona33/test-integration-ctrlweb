@@ -48,11 +48,33 @@ const infos = [
   },
 ];
 
+const listIcons = [
+  {
+    name: "twitter",
+    link: "https://www.twitter.com",
+    color: "text-white",
+    hoverColor: "hover:text-blue-300",
+  },
+  {
+    name: "square-facebook",
+    link: "https://www.facebook.com",
+    color: "text-white",
+    hoverColor: "hover:text-blue-300",
+  },
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com",
+    color: "text-white",
+    hoverColor: "hover:text-blue-300",
+  },
+];
+
 export default {
   data() {
     return {
       items,
       infos,
+      listIcons,
     };
   },
 };
@@ -70,8 +92,8 @@ export default {
         </ul>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="flex flex-col gap-10">
+      <div class="flex flex-col gap-4">
         <div v-for="info in infos" :key="info.id" class="flex gap-4">
           <font-awesome-icon
             :icon="['fas', info.icon]"
@@ -83,6 +105,21 @@ export default {
             ]"
           />
           <h2 class="text-base text-white">{{ info.title }}</h2>
+        </div>
+      </div>
+      <div>
+        <div
+          class="flex px-4 gap-4 flex-row text-2xl items-center justify-center lg:justify-start"
+        >
+          <div v-for="icon in listIcons" :key="icon.name">
+            <a
+              :href="icon.link"
+              target="_blank"
+              :class="[icon.color, icon.hoverColor, 'transition-colors']"
+            >
+              <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

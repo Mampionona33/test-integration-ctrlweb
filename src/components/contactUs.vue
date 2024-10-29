@@ -16,12 +16,13 @@
           class="flex px-4 gap-4 flex-row text-2xl items-center justify-center lg:justify-start"
         >
           <div v-for="icon in listIcons" :key="icon.name">
-            <router-link
-              :to="icon.link"
+            <a
+              :href="icon.link"
+              target="_blank"
               :class="[icon.color, icon.hoverColor, 'transition-colors']"
             >
               <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
-            </router-link>
+            </a>
           </div>
         </div>
 

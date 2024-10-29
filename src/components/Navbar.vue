@@ -51,24 +51,32 @@ const toggleMenu = () => {
     </div>
 
     <div class="flex items-center md:justify-center flex-1">
-      <router-link class="flex gap-2 hover:scale-105" to="/">
+      <a class="flex gap-2 hover:scale-105" href="/" target="_blank">
         <img class="h-20" src="../assets/logo_dark.png" alt="logo" />
-      </router-link>
+      </a>
     </div>
 
     <div class="hidden md:flex gap-4 items-center flex-1 justify-start">
-      <router-link class="hover:text-gray-300" to="/twitter">
+      <a
+        class="hover:text-gray-300"
+        href="https://www.twitter.com"
+        target="_blank"
+      >
         <font-awesome-icon :icon="['fab', 'twitter']" class="text-2xl" />
-      </router-link>
-      <router-link class="hover:text-gray-300" to="/facebook">
+      </a>
+      <a
+        class="hover:text-gray-300"
+        href="https://www.facebook.com"
+        target="_blank"
+      >
         <font-awesome-icon
           :icon="['fab', 'square-facebook']"
           class="text-2xl"
         />
-      </router-link>
-      <router-link class="hover:text-gray-300" to="/linkedin">
+      </a>
+      <a class="hover:text-gray-300" href="https://www.linkedin.com" target="_blank">
         <font-awesome-icon :icon="['fab', 'linkedin']" class="text-2xl" />
-      </router-link>
+      </a>
     </div>
 
     <div class="md:hidden">
