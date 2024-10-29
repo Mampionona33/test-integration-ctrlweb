@@ -31,6 +31,7 @@ const items = [
     ],
   },
 ];
+
 const infos = [
   {
     id: "1",
@@ -69,12 +70,45 @@ const listIcons = [
   },
 ];
 
+const desktopMenu = [
+  {
+    title: "pages",
+    items: [
+      { name: "Home", link: "/" },
+      { name: "Product", link: "/product" },
+      { name: "Pricing", link: "/pricing" },
+      { name: "About", link: "/about" },
+      { name: "Contact", link: "/contact" },
+    ],
+  },
+  {
+    title: "Tomothy",
+    items: [
+      { name: "Eleanor Edwards", link: "/" },
+      { name: "Ted Robertson", link: "/" },
+      { name: "Annette Russell", link: "/" },
+      { name: "Jennie Mckinney", link: "/about" },
+      { name: "Gloria Richards", link: "/contact" },
+    ],
+  },
+  {
+    title: "Jane Black",
+    items: [
+      { name: "Philip Jones", link: "/" },
+      { name: "Product", link: "/" },
+      { name: "Marvin Hawkins", link: "/" },
+      { name: "Bruce Simmons", link: "/" },
+    ],
+  },
+];
+
 export default {
   data() {
     return {
       items,
       infos,
       listIcons,
+      desktopMenu,
     };
   },
 };
@@ -82,9 +116,9 @@ export default {
 
 <template>
   <div
-    class="bg-[#252B42] text-white items-center text-center py-20 gap-20 flex flex-col"
+    class="bg-[#252B42] text-white items-center text-center py-20 gap-20 flex flex-col md:flex-row md:justify-evenly md:items-start md:px-10"
   >
-    <div class="flex flex-col gap-20">
+    <div class="flex flex-col gap-20 md:hidden">
       <div v-for="(item, index) in items" :key="index">
         <h3 class="font-bold text-xl">{{ item.title }}</h3>
         <ul class="flex flex-col gap-4">
@@ -92,9 +126,33 @@ export default {
         </ul>
       </div>
     </div>
+
+    <!-- Menu desktop -->
+    <div class="hidden md:flex justify-start items-start gap-20">
+      <div
+        v-for="(menu, menuIndex) in desktopMenu"
+        :key="menuIndex"
+        class="flex flex-col gap-4 justify-start items-start"
+      >
+        <h3 class="font-bold text-xl mb-2">{{ menu.title }}</h3>
+        <ul class="flex flex-col gap-4 justify-start items-start">
+          <li v-for="item in menu.items" :key="item.name">
+            <router-link class="hover:text-gray-300" :to="item.link">
+              {{ item.name }}
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Informations -->
     <div class="flex flex-col gap-10">
       <div class="flex flex-col gap-4">
-        <div v-for="info in infos" :key="info.id" class="flex gap-4">
+        <div
+          v-for="info in infos"
+          :key="info.id"
+          class="flex gap-4 items-center"
+        >
           <font-awesome-icon
             :icon="['fas', info.icon]"
             :class="[
@@ -103,23 +161,25 @@ export default {
               'transition-colors',
               'text-2xl',
             ]"
+            aria-hidden="true"
           />
           <h2 class="text-base text-white">{{ info.title }}</h2>
         </div>
       </div>
-      <div>
-        <div
-          class="flex px-4 gap-4 flex-row text-2xl items-center justify-center lg:justify-start"
-        >
-          <div v-for="icon in listIcons" :key="icon.name">
-            <a
-              :href="icon.link"
-              target="_blank"
-              :class="[icon.color, icon.hoverColor, 'transition-colors']"
-            >
-              <font-awesome-icon :icon="['fab', icon.name]" class="text-4xl" />
-            </a>
-          </div>
+
+      <!-- Icônes de réseaux sociaux -->
+      <div
+        class="flex px-4 gap-4 flex-row text-2xl items-center justify-center md:justify-start"
+      >
+        <div v-for="icon in listIcons" :key="icon.name">
+          <a
+            :href="icon.link"
+            target="_blank"
+            :class="[icon.color, icon.hoverColor, 'transition-colors']"
+            aria-label="social media link"
+          >
+            <font-awesome-icon :icon="['fab', icon.name]" class="text-5xl" />
+          </a>
         </div>
       </div>
     </div>
