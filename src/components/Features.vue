@@ -8,7 +8,9 @@
     >
       Most calendars are designed for teams.
     </p>
-    <img src="../assets/video_screen.png" alt="vidéo" class="md:hidden" />
+    <div class="flex justify-center items-center max-h-full">
+      <img src="../assets/video_screen.png" alt="vidéo" class="md:hidden" />
+    </div>
 
     <div
       class="flex flex-col lg:flex-row md:flex-row md:gap-x-20 md:w-1/2 md:mt-14 md:items-start"
@@ -29,11 +31,13 @@
         description="Slate helps you achieve more days you need to work to reach your goals."
       />
     </div>
-    <img
-      src="/src/assets/desktop_screen_video.svg"
-      alt="vidéo"
-      class="hidden md:block"
-    />
+    <div class="flex justify-center items-center max-h-screen p-60">
+      <img
+        src="/src/assets/desktop_screen_video.svg"
+        alt="vidéo"
+        class="hidden md:flex"
+      />
+    </div>
   </div>
 </template>
 
