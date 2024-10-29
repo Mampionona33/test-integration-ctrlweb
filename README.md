@@ -46,10 +46,6 @@ Les contributions sont les bienvenues. Veuillez suivre les étapes suivantes :
 3. Faites vos modifications et commit.
 4. Poussez votre branche et ouvrez une Pull Request.
 
-## License
-
-Ce projet est sous licence MIT. Pour plus de détails, veuillez consulter le fichier [LICENSE](LICENSE).
-
 ## Documentation supplémentaire
 
 Pour des instructions détaillées sur l'installation, consultez le fichier [INSTALL.md](INSTALL.md).
