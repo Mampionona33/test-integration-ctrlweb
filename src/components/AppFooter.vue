@@ -35,14 +35,14 @@ const infos = [
   {
     id: "1",
     icon: "location-dot",
-    title: "6386 Spring St undefined Anchorage, Georgia 12473 United States",
+    title: "7480 Mockingbird Hill undefined",
     color: "text-white",
     hoverColor: "hover:text-blue-300",
   },
   {
     id: "2",
     icon: "phone",
-    title: "(843) 555-0130",
+    title: "(239) 555-0108",
     color: "text-white",
     hoverColor: "hover:text-blue-300",
   },
